@@ -24,6 +24,7 @@ describe('NumbersComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  //Pruebas de los primeros 100 números
   //1
   it('should return a message',()=>{
     expect(rms.aRomano(0)).toEqual("No se puede calcular");
@@ -335,6 +336,437 @@ describe('NumbersComponent', () => {
   //100
   it('should return C',()=>{
     expect(rms.aRomano(100)).toEqual('C');
+  })
+  //Pruebas a partir de 100
+  ///101 a 103
+  it('should return CI, CII, CIII',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(101))
+    exp.push(rms.aRomano(102))
+    exp.push(rms.aRomano(103))
+    expect(exp).toEqual(['CI','CII','CIII'])
+  })
+  it('should return CIV',()=>{
+    expect(rms.aRomano(104)).toEqual('CIV');
+  })
+  it('should return CV',()=>{
+    expect(rms.aRomano(105)).toEqual('CV');
+  })
+  //106 a 108
+  it('should return CVI, CVII, CVIII',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(106))
+    exp.push(rms.aRomano(107))
+    exp.push(rms.aRomano(108))
+    expect(exp).toEqual(['CVI','CVII','CVIII'])
+  })
+  it('should return CIX',()=>{
+    expect(rms.aRomano(109)).toEqual('CIX');
+  })  
+  it('should return CX',()=>{
+    expect(rms.aRomano(110)).toEqual('CX');
+  })
+  //111 a 119
+  it('should return CXI, CXII, CXIII, CXIV, CXV, CXVI, CXVII, CXVIII, CXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(111))
+    exp.push(rms.aRomano(112))
+    exp.push(rms.aRomano(113))
+    exp.push(rms.aRomano(114))
+    exp.push(rms.aRomano(115))
+    exp.push(rms.aRomano(116))
+    exp.push(rms.aRomano(117))
+    exp.push(rms.aRomano(118))
+    exp.push(rms.aRomano(119))    
+    expect(exp).toEqual(['CXI','CXII','CXIII','CXIV','CXV','CXVI','CXVII','CXVIII','CXIX'])
+  })
+  it('should return CXX',()=>{
+    expect(rms.aRomano(120)).toEqual('CXX');
+  })
+  //121 - 129
+  it('should return CXXI, CXXII, CXXIII, CXXIV, CXXV, CXXVI, CXXVII, CXXVIII, CXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(121))
+    exp.push(rms.aRomano(122))
+    exp.push(rms.aRomano(123))
+    exp.push(rms.aRomano(124))
+    exp.push(rms.aRomano(125))
+    exp.push(rms.aRomano(126))
+    exp.push(rms.aRomano(127))
+    exp.push(rms.aRomano(128))
+    exp.push(rms.aRomano(129))    
+    expect(exp).toEqual(['CXXI','CXXII','CXXIII','CXXIV','CXXV','CXXVI','CXXVII','CXXVIII','CXXIX'])
+  })
+  it('should return CXXX',()=>{
+    expect(rms.aRomano(130)).toEqual('CXXX');
+  })
+  //131 - 139
+  it('should return CXXXI, CXXXII, CXXXIII, CXXXIV, CXXXV, CXXXVI, CXXXVII, CXXXVIII, CXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(131))
+    exp.push(rms.aRomano(132))
+    exp.push(rms.aRomano(133))
+    exp.push(rms.aRomano(134))
+    exp.push(rms.aRomano(135))
+    exp.push(rms.aRomano(136))
+    exp.push(rms.aRomano(137))
+    exp.push(rms.aRomano(138))
+    exp.push(rms.aRomano(139))    
+    expect(exp).toEqual(['CXXXI','CXXXII','CXXXIII','CXXXIV','CXXXV','CXXXVI','CXXXVII','CXXXVIII','CXXXIX'])
+  })
+  it('should return CXL',()=>{
+    expect(rms.aRomano(140)).toEqual('CXL');
+  })
+  //141 - 149
+  it('should return CXLI, CXLII, CXLIII, CXLIV, CXLV, CXLVI, CXLVII, CXLVIII, CXLIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(141))
+    exp.push(rms.aRomano(142))
+    exp.push(rms.aRomano(143))
+    exp.push(rms.aRomano(144))
+    exp.push(rms.aRomano(145))
+    exp.push(rms.aRomano(146))
+    exp.push(rms.aRomano(147))
+    exp.push(rms.aRomano(148))
+    exp.push(rms.aRomano(149))    
+    expect(exp).toEqual(['CXLI','CXLII','CXLIII','CXLIV','CXLV','CXLVI','CXLVII','CXLVIII','CXLIX'])
+  })
+  it('should return CXL',()=>{
+    expect(rms.aRomano(150)).toEqual('CL');
+  })
+  //151 - 159
+  it('should return CLI, CLII, CLIII, CLIV, CLV, CLVI, CLVII, CLVIII, CLIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(151))
+    exp.push(rms.aRomano(152))
+    exp.push(rms.aRomano(153))
+    exp.push(rms.aRomano(154))
+    exp.push(rms.aRomano(155))
+    exp.push(rms.aRomano(156))
+    exp.push(rms.aRomano(157))
+    exp.push(rms.aRomano(158))
+    exp.push(rms.aRomano(159))    
+    expect(exp).toEqual(['CLI','CLII','CLIII','CLIV','CLV','CLVI','CLVII','CLVIII','CLIX'])
+  })
+  it('should return CLX',()=>{
+    expect(rms.aRomano(160)).toEqual('CLX');
+  })
+  //161 - 169
+  it('should return CLXI, CLXII, CLXIII, CLXIV, CLXV, CLXVI, CLXVII, CLXVIII, CLXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(161))
+    exp.push(rms.aRomano(162))
+    exp.push(rms.aRomano(163))
+    exp.push(rms.aRomano(164))
+    exp.push(rms.aRomano(165))
+    exp.push(rms.aRomano(166))
+    exp.push(rms.aRomano(167))
+    exp.push(rms.aRomano(168))
+    exp.push(rms.aRomano(169))    
+    expect(exp).toEqual(['CLXI','CLXII','CLXIII','CLXIV','CLXV','CLXVI','CLXVII','CLXVIII','CLXIX'])
+  })
+  it('should return CLXX',()=>{
+    expect(rms.aRomano(170)).toEqual('CLXX');
+  })
+  //171 - 179
+  it('should return CLXXI, CLXXII, CLXXIII, CLXXIV, CLXXV, CLXXVI, CLXXVII, CLXXVIII, CLXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(171))
+    exp.push(rms.aRomano(172))
+    exp.push(rms.aRomano(173))
+    exp.push(rms.aRomano(174))
+    exp.push(rms.aRomano(175))
+    exp.push(rms.aRomano(176))
+    exp.push(rms.aRomano(177))
+    exp.push(rms.aRomano(178))
+    exp.push(rms.aRomano(179))    
+    expect(exp).toEqual(['CLXXI','CLXXII','CLXXIII','CLXXIV','CLXXV','CLXXVI','CLXXVII','CLXXVIII','CLXXIX'])
+  })
+  it('should return CLXXX',()=>{
+    expect(rms.aRomano(180)).toEqual('CLXXX');
+  })
+  //181 - 189
+  it('should return CLXXXI, CLXXXII, CLXXXIII, CLXXXIV, CLXXXV, CLXXXVI, CLXXXVII, CLXXXVIII, CLXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(181))
+    exp.push(rms.aRomano(182))
+    exp.push(rms.aRomano(183))
+    exp.push(rms.aRomano(184))
+    exp.push(rms.aRomano(185))
+    exp.push(rms.aRomano(186))
+    exp.push(rms.aRomano(187))
+    exp.push(rms.aRomano(188))
+    exp.push(rms.aRomano(189))    
+    expect(exp).toEqual(['CLXXXI','CLXXXII','CLXXXIII','CLXXXIV','CLXXXV','CLXXXVI','CLXXXVII','CLXXXVIII','CLXXXIX'])
+  })  
+  it('should return CXC',()=>{
+    expect(rms.aRomano(190)).toEqual('CXC');
+  })
+  //191 - 199
+  it('should return CXC, CXCII, CXCIII, CXCIV, CXCV, CXCVI, CXCVII, CXCVIII, CXCIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(191))
+    exp.push(rms.aRomano(192))
+    exp.push(rms.aRomano(193))
+    exp.push(rms.aRomano(194))
+    exp.push(rms.aRomano(195))
+    exp.push(rms.aRomano(196))
+    exp.push(rms.aRomano(197))
+    exp.push(rms.aRomano(198))
+    exp.push(rms.aRomano(199))    
+    expect(exp).toEqual(['CXCI','CXCII','CXCIII','CXCIV','CXCV','CXCVI','CXCVII','CXCVIII','CXCIX'])
+  })
+  //200
+  it('should return CC',()=>{
+    expect(rms.aRomano(200)).toEqual('CC');
+  })
+  // 201 - 209
+  it('should return CCI, CCII, CCIII, CCIV, CCV, CCVI, CCVII, CCVIII, CCIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(201))
+    exp.push(rms.aRomano(202))
+    exp.push(rms.aRomano(203))
+    exp.push(rms.aRomano(204))
+    exp.push(rms.aRomano(205))
+    exp.push(rms.aRomano(206))
+    exp.push(rms.aRomano(207))
+    exp.push(rms.aRomano(208))
+    exp.push(rms.aRomano(209))    
+    expect(exp).toEqual(['CCI','CCII','CCIII','CCIV','CCV','CCVI','CCVII','CCVIII','CCIX'])
+  })
+  it('should return CCX',()=>{
+    expect(rms.aRomano(210)).toEqual('CCX');
+  })
+  // 211 - 239
+  it('should return CCXI, CCXII, CCXIII, CCXIV, CCXV, CCXVI, CCXVII, CCXVIII, CCXIX, CCXX, CCXXI, CCXXIII, CCXXIV, CCXXV, CCXXVI, CCXXVII, CCXXVIII, CCXXIX, CCXXX, CCXXXI, CCXXXII, CCXXXIII, CCXXXIV, CCXXXV, CCXXXVI, CCXXXVII, CCXXXVIII, CCXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(211))
+    exp.push(rms.aRomano(212))
+    exp.push(rms.aRomano(213))
+    exp.push(rms.aRomano(214))
+    exp.push(rms.aRomano(215))
+    exp.push(rms.aRomano(216))
+    exp.push(rms.aRomano(217))
+    exp.push(rms.aRomano(218))
+    exp.push(rms.aRomano(219))    
+    exp.push(rms.aRomano(220))
+    exp.push(rms.aRomano(221))
+    exp.push(rms.aRomano(222))
+    exp.push(rms.aRomano(223))
+    exp.push(rms.aRomano(224))
+    exp.push(rms.aRomano(225))
+    exp.push(rms.aRomano(226))
+    exp.push(rms.aRomano(227))
+    exp.push(rms.aRomano(228))
+    exp.push(rms.aRomano(229))
+    exp.push(rms.aRomano(230))
+    exp.push(rms.aRomano(231))
+    exp.push(rms.aRomano(232))
+    exp.push(rms.aRomano(233))
+    exp.push(rms.aRomano(234))
+    exp.push(rms.aRomano(235))
+    exp.push(rms.aRomano(236))
+    exp.push(rms.aRomano(237))
+    exp.push(rms.aRomano(238))
+    exp.push(rms.aRomano(239))    
+    expect(exp).toEqual(['CCXI', 'CCXII', 'CCXIII', 'CCXIV', 'CCXV', 'CCXVI', 'CCXVII', 'CCXVIII', 'CCXIX', 'CCXX', 'CCXXI', 'CCXXII', 'CCXXIII', 'CCXXIV', 'CCXXV', 'CCXXVI', 'CCXXVII', 'CCXXVIII', 'CCXXIX', 'CCXXX', 'CCXXXI', 'CCXXXII', 'CCXXXIII', 'CCXXXIV', 'CCXXXV', 'CCXXXVI', 'CCXXXVII', 'CCXXXVIII','CCXXXIX'])
+  })
+  it('should return CCXL',()=>{
+    expect(rms.aRomano(240)).toEqual('CCXL');
+  })
+  // 241 - 249
+  it('should return CCXLI, CCXLII, CCXLIII, CCXLIV, CCXLV, CCXLVI, CCXLVII, CCXLVIII, CCXLIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(241))
+    exp.push(rms.aRomano(242))
+    exp.push(rms.aRomano(243))
+    exp.push(rms.aRomano(244))
+    exp.push(rms.aRomano(245))
+    exp.push(rms.aRomano(246))
+    exp.push(rms.aRomano(247))
+    exp.push(rms.aRomano(248))
+    exp.push(rms.aRomano(249))    
+    expect(exp).toEqual(['CCXLI','CCXLII','CCXLIII','CCXLIV','CCXLV','CCXLVI','CCXLVII','CCXLVIII','CCXLIX'])
+  })
+  it('should return CCL',()=>{
+    expect(rms.aRomano(250)).toEqual('CCL');
+  })
+  // 251 - 289
+  it('should return CCLI, CCLII, CCLIII, CCLIV, CCLV, CCLVI, CCLVII, CCLVIII, CCLIX, CCLX, CCLXI, CCLXII, CCLXIII, CCLXIV, CCLXV, CCLXVI, CCLXVII, CCLXVIII, CCLXIX, CCLXX, CCLXXI, CCLXXII, CCLXXIII, CCLXXIV, CCLXXV, CCLXXVI, CCLXXVII, CCLXXVIII, CCLXXIX, CCLXXX, CCLXXXI, CCLXXXII, CCLXXXIII, CCLXXXIV, CCLXXXV, CCLXXXVI, CCLXXXVII, CCLXXXVIII, CCLXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(251))
+    exp.push(rms.aRomano(252))
+    exp.push(rms.aRomano(253))
+    exp.push(rms.aRomano(254))
+    exp.push(rms.aRomano(255))
+    exp.push(rms.aRomano(256))
+    exp.push(rms.aRomano(257))
+    exp.push(rms.aRomano(258))
+    exp.push(rms.aRomano(259))    
+    exp.push(rms.aRomano(260))
+    exp.push(rms.aRomano(261))
+    exp.push(rms.aRomano(262))
+    exp.push(rms.aRomano(263))
+    exp.push(rms.aRomano(264))
+    exp.push(rms.aRomano(265))
+    exp.push(rms.aRomano(266))
+    exp.push(rms.aRomano(267))
+    exp.push(rms.aRomano(268))
+    exp.push(rms.aRomano(269))
+    exp.push(rms.aRomano(270))
+    exp.push(rms.aRomano(271))
+    exp.push(rms.aRomano(272))
+    exp.push(rms.aRomano(273))
+    exp.push(rms.aRomano(274))
+    exp.push(rms.aRomano(275))
+    exp.push(rms.aRomano(276))
+    exp.push(rms.aRomano(277))
+    exp.push(rms.aRomano(278))
+    exp.push(rms.aRomano(279))    
+    exp.push(rms.aRomano(280))
+    exp.push(rms.aRomano(281))
+    exp.push(rms.aRomano(282))
+    exp.push(rms.aRomano(283))
+    exp.push(rms.aRomano(284))
+    exp.push(rms.aRomano(285))
+    exp.push(rms.aRomano(286))
+    exp.push(rms.aRomano(287))
+    exp.push(rms.aRomano(288))
+    exp.push(rms.aRomano(289))    
+    expect(exp).toEqual(['CCLI', 'CCLII', 'CCLIII', 'CCLIV', 'CCLV', 'CCLVI', 'CCLVII', 'CCLVIII', 'CCLIX', 'CCLX', 'CCLXI', 'CCLXII', 'CCLXIII', 'CCLXIV', 'CCLXV', 'CCLXVI', 'CCLXVII', 'CCLXVIII', 'CCLXIX', 'CCLXX', 'CCLXXI', 'CCLXXII', 'CCLXXIII', 'CCLXXIV', 'CCLXXV', 'CCLXXVI', 'CCLXXVII', 'CCLXXVIII','CCLXXIX','CCLXXX','CCLXXXI','CCLXXXII','CCLXXXIII','CCLXXXIV','CCLXXXV','CCLXXXVI','CCLXXXVII','CCLXXXVIII','CCLXXXIX'])
+  })
+  it('should return CCXC',()=>{
+    expect(rms.aRomano(290)).toEqual('CCXC');
+  })
+  // 291 - 299
+  it('should return CCXC, CCXCII, CCXCIII, CCXCIV, CCXCV, CCXCVI, CCXCVII, CCXCVIII, CCXCIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(291))
+    exp.push(rms.aRomano(292))
+    exp.push(rms.aRomano(293))
+    exp.push(rms.aRomano(294))
+    exp.push(rms.aRomano(295))
+    exp.push(rms.aRomano(296))
+    exp.push(rms.aRomano(297))
+    exp.push(rms.aRomano(298))
+    exp.push(rms.aRomano(299))    
+    expect(exp).toEqual(['CCXCI','CCXCII','CCXCIII','CCXCIV','CCXCV','CCXCVI','CCXCVII','CCXCVIII','CCXCIX'])
+  })
+  //Desde 300
+  it('should return CCC',()=>{
+    expect(rms.aRomano(300)).toEqual('CCC');
+  })
+
+  it('should return CCCI, CCCII, CCCIII, CCCIV, CCCV, CCCVI,CCCVII, CCCVIII, CCCIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(301))
+    exp.push(rms.aRomano(302))
+    exp.push(rms.aRomano(303))
+    exp.push(rms.aRomano(304))
+    exp.push(rms.aRomano(305))
+    exp.push(rms.aRomano(306))
+    exp.push(rms.aRomano(307))
+    exp.push(rms.aRomano(308))
+    exp.push(rms.aRomano(309))    
+    expect(exp).toEqual(['CCCI','CCCII','CCCIII','CCCIV','CCCV','CCCVI','CCCVII','CCCVIII','CCCIX'])
+  })
+  it('should return CCCX',()=>{
+    expect(rms.aRomano(310)).toEqual('CCCX');
+  })
+  it('should return CCCXI, CCCXII, CCCXIII, CCCXIV, CCCXV, CCCXVI, CCCXVII, CCCXVIII, CCCXIX, CCCXX, CCCXXI, CCCXXIII, CCCXXIV, CCCXXV, CCCXXVI, CCCXXVII, CCCXXVIII, CCCXXIX, CCCXXX, CCCXXXI, CCCXXXII, CCCXXXIII, CCCXXXIV, CCCXXXV, CCCXXXVI, CCCXXXVII, CCCXXXVIII, CCCXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(311))
+    exp.push(rms.aRomano(312))
+    exp.push(rms.aRomano(313))
+    exp.push(rms.aRomano(314))
+    exp.push(rms.aRomano(315))
+    exp.push(rms.aRomano(316))
+    exp.push(rms.aRomano(317))
+    exp.push(rms.aRomano(318))
+    exp.push(rms.aRomano(319))    
+    exp.push(rms.aRomano(320))
+    exp.push(rms.aRomano(321))
+    exp.push(rms.aRomano(322))
+    exp.push(rms.aRomano(323))
+    exp.push(rms.aRomano(324))
+    exp.push(rms.aRomano(325))
+    exp.push(rms.aRomano(326))
+    exp.push(rms.aRomano(327))
+    exp.push(rms.aRomano(328))
+    exp.push(rms.aRomano(329))
+    exp.push(rms.aRomano(330))
+    exp.push(rms.aRomano(331))
+    exp.push(rms.aRomano(332))
+    exp.push(rms.aRomano(333))
+    exp.push(rms.aRomano(334))
+    exp.push(rms.aRomano(335))
+    exp.push(rms.aRomano(336))
+    exp.push(rms.aRomano(337))
+    exp.push(rms.aRomano(338))
+    exp.push(rms.aRomano(339))    
+    expect(exp).toEqual(['CCCXI', 'CCCXII', 'CCCXIII', 'CCCXIV', 'CCCXV', 'CCCXVI', 'CCCXVII', 'CCCXVIII', 'CCCXIX', 'CCCXX', 'CCCXXI', 'CCCXXII', 'CCCXXIII', 'CCCXXIV', 'CCCXXV', 'CCCXXVI', 'CCCXXVII', 'CCCXXVIII', 'CCCXXIX', 'CCCXXX', 'CCCXXXI', 'CCCXXXII', 'CCCXXXIII', 'CCCXXXIV', 'CCCXXXV', 'CCCXXXVI', 'CCCXXXVII', 'CCCXXXVIII','CCCXXXIX'])
+  })
+  it('should return CCCXL',()=>{
+    expect(rms.aRomano(340)).toEqual('CCCXL');
+  })
+  it('should return CCCXLI, CCCXLII, CCCXLIII, CCCXLIV, CCCXLV, CCCXLVI, CCCXLVII, CCCXLVIII, CCCXLIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(341))
+    exp.push(rms.aRomano(342))
+    exp.push(rms.aRomano(343))
+    exp.push(rms.aRomano(344))
+    exp.push(rms.aRomano(345))
+    exp.push(rms.aRomano(346))
+    exp.push(rms.aRomano(347))
+    exp.push(rms.aRomano(348))
+    exp.push(rms.aRomano(349))    
+    expect(exp).toEqual(['CCCXLI','CCCXLII','CCCXLIII','CCCXLIV','CCCXLV','CCCXLVI','CCCXLVII','CCCXLVIII','CCCXLIX'])
+  })
+  it('should return CCCL',()=>{
+    expect(rms.aRomano(350)).toEqual('CCCL');
+  })
+  it('should return CCCLI, CCCLII, CCCLIII, CCCLIV, CCCLV, CCCLVI, CCCLVII, CCCLVIII, CCCLIX, CCCLX, CCCLXI, CCCLXII, CCCLXIII, CCCLXIV, CCCLXV, CCCLXVI, CCCLXVII, CCCLXVIII, CCCLXIX, CCCLXX, CCCLXXI, CCCLXXII, CCCLXXIII, CCCLXXIV, CCCLXXV, CCCLXXVI, CCCLXXVII, CCCLXXVIII, CCCLXXIX, CCCLXXX, CCCLXXXI, CCCLXXXII, CCCLXXXIII, CCCLXXXIV, CCCLXXXV, CCCLXXXVI, CCCLXXXVII, CCCLXXXVIII, CCCLXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(351))
+    exp.push(rms.aRomano(352))
+    exp.push(rms.aRomano(353))
+    exp.push(rms.aRomano(354))
+    exp.push(rms.aRomano(355))
+    exp.push(rms.aRomano(356))
+    exp.push(rms.aRomano(357))
+    exp.push(rms.aRomano(358))
+    exp.push(rms.aRomano(359))    
+    exp.push(rms.aRomano(360))
+    exp.push(rms.aRomano(361))
+    exp.push(rms.aRomano(362))
+    exp.push(rms.aRomano(363))
+    exp.push(rms.aRomano(364))
+    exp.push(rms.aRomano(365))
+    exp.push(rms.aRomano(366))
+    exp.push(rms.aRomano(367))
+    exp.push(rms.aRomano(368))
+    exp.push(rms.aRomano(369))
+    exp.push(rms.aRomano(370))
+    exp.push(rms.aRomano(371))
+    exp.push(rms.aRomano(372))
+    exp.push(rms.aRomano(373))
+    exp.push(rms.aRomano(374))
+    exp.push(rms.aRomano(375))
+    exp.push(rms.aRomano(376))
+    exp.push(rms.aRomano(377))
+    exp.push(rms.aRomano(378))
+    exp.push(rms.aRomano(379))    
+    exp.push(rms.aRomano(380))
+    exp.push(rms.aRomano(381))
+    exp.push(rms.aRomano(382))
+    exp.push(rms.aRomano(383))
+    exp.push(rms.aRomano(384))
+    exp.push(rms.aRomano(385))
+    exp.push(rms.aRomano(386))
+    exp.push(rms.aRomano(387))
+    exp.push(rms.aRomano(388))
+    exp.push(rms.aRomano(389))    
+    expect(exp).toEqual(['CCCLI', 'CCCLII', 'CCCLIII', 'CCCLIV', 'CCCLV', 'CCCLVI', 'CCCLVII', 'CCCLVIII', 'CCCLIX', 'CCCLX', 'CCCLXI', 'CCCLXII', 'CCCLXIII', 'CCCLXIV', 'CCCLXV', 'CCCLXVI', 'CCCLXVII', 'CCCLXVIII', 'CCCLXIX', 'CCCLXX', 'CCCLXXI', 'CCCLXXII', 'CCCLXXIII', 'CCCLXXIV', 'CCCLXXV', 'CCCLXXVI', 'CCCLXXVII', 'CCCLXXVIII','CCCLXXIX','CCCLXXX','CCCLXXXI','CCCLXXXII','CCCLXXXIII','CCCLXXXIV','CCCLXXXV','CCCLXXXVI','CCCLXXXVII','CCCLXXXVIII','CCCLXXXIX'])
   })
 });
 
