@@ -23,7 +23,7 @@ describe('NumbersComponent', () => {
   
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
+  });  
   //Pruebas de los primeros 100 números
   //1
   it('should return a message',()=>{
@@ -1442,6 +1442,141 @@ describe('NumbersComponent', () => {
     exp.push(rms.aRomano(898))
     exp.push(rms.aRomano(899))    
     expect(exp).toEqual(['DCCCXCI','DCCCXCII','DCCCXCIII','DCCCXCIV','DCCCXCV','DCCCXCVI','DCCCXCVII','DCCCXCVIII','DCCCXCIX'])
+  })
+  //Desde 900
+  it('should return CM',()=>{
+    expect(rms.aRomano(900)).toEqual('CM')
+  })  
+
+  it('should return CMI, CMII, CMIII, CMIV, CMV, CMVI,CMVII, CMVIII,CMIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(901))
+    exp.push(rms.aRomano(902))
+    exp.push(rms.aRomano(903))
+    exp.push(rms.aRomano(904))
+    exp.push(rms.aRomano(905))
+    exp.push(rms.aRomano(906))
+    exp.push(rms.aRomano(907))
+    exp.push(rms.aRomano(908))
+    exp.push(rms.aRomano(909))    
+    expect(exp).toEqual(['CMI','CMII','CMIII','CMIV','CMV','CMVI','CMVII','CMVIII','CMIX'])
+  })
+  it('should return CMX',()=>{
+    expect(rms.aRomano(910)).toEqual('CMX');
+  })
+  it('should return CMXI, CMXII, CMXIII, CMXIV, CMXV, CMXVI, CMXVII, CMXVIII, CMXIX, CMXX, CMXXI, CMXXIII, CMXXIV, CMXXV, CMXXVI, CMXXVII, CMXXVIII, CMXXIX, CMXXX, CMXXXI, CMXXXII, CMXXXIII, CMXXXIV, CMXXXV, CMXXXVI, CMXXXVII, CMXXXVIII, CMXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(911))
+    exp.push(rms.aRomano(912))
+    exp.push(rms.aRomano(913))
+    exp.push(rms.aRomano(914))
+    exp.push(rms.aRomano(915))
+    exp.push(rms.aRomano(916))
+    exp.push(rms.aRomano(917))
+    exp.push(rms.aRomano(918))
+    exp.push(rms.aRomano(919))    
+    exp.push(rms.aRomano(920))
+    exp.push(rms.aRomano(921))
+    exp.push(rms.aRomano(922))
+    exp.push(rms.aRomano(923))
+    exp.push(rms.aRomano(924))
+    exp.push(rms.aRomano(925))
+    exp.push(rms.aRomano(926))
+    exp.push(rms.aRomano(927))
+    exp.push(rms.aRomano(928))
+    exp.push(rms.aRomano(929))
+    exp.push(rms.aRomano(930))
+    exp.push(rms.aRomano(931))
+    exp.push(rms.aRomano(932))
+    exp.push(rms.aRomano(933))
+    exp.push(rms.aRomano(934))
+    exp.push(rms.aRomano(935))
+    exp.push(rms.aRomano(936))
+    exp.push(rms.aRomano(937))
+    exp.push(rms.aRomano(938))
+    exp.push(rms.aRomano(939))    
+    expect(exp).toEqual(['CMXI', 'CMXII', 'CMXIII', 'CMXIV', 'CMXV', 'CMXVI', 'CMXVII', 'CMXVIII', 'CMXIX', 'CMXX', 'CMXXI', 'CMXXII', 'CMXXIII', 'CMXXIV', 'CMXXV', 'CMXXVI', 'CMXXVII', 'CMXXVIII', 'CMXXIX', 'CMXXX', 'CMXXXI', 'CMXXXII', 'CMXXXIII', 'CMXXXIV', 'CMXXXV', 'CMXXXVI', 'CMXXXVII', 'CMXXXVIII','CMXXXIX'])
+  })
+  it('should return CMXL',()=>{
+    expect(rms.aRomano(940)).toEqual('CMXL');
+  })
+  it('should return CMXLI, CMXLII, CMXLIII, CMXLIV, CMXLV, CMXLVI, CMXLVII, CMXLVIII, CMXLIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(941))
+    exp.push(rms.aRomano(942))
+    exp.push(rms.aRomano(943))
+    exp.push(rms.aRomano(944))
+    exp.push(rms.aRomano(945))
+    exp.push(rms.aRomano(946))
+    exp.push(rms.aRomano(947))
+    exp.push(rms.aRomano(948))
+    exp.push(rms.aRomano(949))    
+    expect(exp).toEqual(['CMXLI','CMXLII','CMXLIII','CMXLIV','CMXLV','CMXLVI','CMXLVII','CMXLVIII','CMXLIX'])
+  })
+  it('should return CML',()=>{
+    expect(rms.aRomano(950)).toEqual('CML');
+  })
+  it('should return CMLI, CMLII, CMLIII, CMLIV, CMLV, CMLVI, CMLVII, CMLVIII, CMLIX, CMLX, CMLXI, CMLXII, CMLXIII, CMLXIV, CMLXV, CMLXVI, CMLXVII, CMLXVIII, CMLXIX, CMLXX, CMLXXI, CMLXXII, CMLXXIII, CMLXXIV, CMLXXV, CMLXXVI, CMLXXVII, CMLXXVIII, CMLXXIX, CMLXXX, CMLXXXI, CMLXXXII, CMLXXXIII, CMLXXXIV, CMLXXXV, CMLXXXVI, CMLXXXVII, CMLXXXVIII, CMLXXXIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(951))
+    exp.push(rms.aRomano(952))
+    exp.push(rms.aRomano(953))
+    exp.push(rms.aRomano(954))
+    exp.push(rms.aRomano(955))
+    exp.push(rms.aRomano(956))
+    exp.push(rms.aRomano(957))
+    exp.push(rms.aRomano(958))
+    exp.push(rms.aRomano(959))    
+    exp.push(rms.aRomano(960))
+    exp.push(rms.aRomano(961))
+    exp.push(rms.aRomano(962))
+    exp.push(rms.aRomano(963))
+    exp.push(rms.aRomano(964))
+    exp.push(rms.aRomano(965))
+    exp.push(rms.aRomano(966))
+    exp.push(rms.aRomano(967))
+    exp.push(rms.aRomano(968))
+    exp.push(rms.aRomano(969))
+    exp.push(rms.aRomano(970))
+    exp.push(rms.aRomano(971))
+    exp.push(rms.aRomano(972))
+    exp.push(rms.aRomano(973))
+    exp.push(rms.aRomano(974))
+    exp.push(rms.aRomano(975))
+    exp.push(rms.aRomano(976))
+    exp.push(rms.aRomano(977))
+    exp.push(rms.aRomano(978))
+    exp.push(rms.aRomano(979))    
+    exp.push(rms.aRomano(980))
+    exp.push(rms.aRomano(981))
+    exp.push(rms.aRomano(982))
+    exp.push(rms.aRomano(983))
+    exp.push(rms.aRomano(984))
+    exp.push(rms.aRomano(985))
+    exp.push(rms.aRomano(986))
+    exp.push(rms.aRomano(987))
+    exp.push(rms.aRomano(988))
+    exp.push(rms.aRomano(989))    
+    expect(exp).toEqual(['CMLI', 'CMLII', 'CMLIII', 'CMLIV', 'CMLV', 'CMLVI', 'CMLVII', 'CMLVIII', 'CMLIX', 'CMLX', 'CMLXI', 'CMLXII', 'CMLXIII', 'CMLXIV', 'CMLXV', 'CMLXVI', 'CMLXVII', 'CMLXVIII', 'CMLXIX', 'CMLXX', 'CMLXXI', 'CMLXXII', 'CMLXXIII', 'CMLXXIV', 'CMLXXV', 'CMLXXVI', 'CMLXXVII', 'CMLXXVIII','CMLXXIX','CMLXXX','CMLXXXI','CMLXXXII','CMLXXXIII','CMLXXXIV','CMLXXXV','CMLXXXVI','CMLXXXVII','CMLXXXVIII','CMLXXXIX'])
+  })
+  it('should return CMXC',()=>{
+    expect(rms.aRomano(990)).toEqual("CMXC");
+  })
+  it('should return CMXCI, CMXCII, CMXCIII, CMXCIV, CMXCV, CMXCVI, CMXCVII, CMXCVIII, CMXCIX',()=>{
+    let exp = [];
+    exp.push(rms.aRomano(991))
+    exp.push(rms.aRomano(992))
+    exp.push(rms.aRomano(993))
+    exp.push(rms.aRomano(994))
+    exp.push(rms.aRomano(995))
+    exp.push(rms.aRomano(996))
+    exp.push(rms.aRomano(997))
+    exp.push(rms.aRomano(998))
+    exp.push(rms.aRomano(999))    
+    expect(exp).toEqual(['CMXCI','CMXCII','CMXCIII','CMXCIV','CMXCV','CMXCVI','CMXCVII','CMXCVIII','CMXCIX'])
+  })
+  it('should return M',()=>{
+    expect(rms.aRomano(1000)).toEqual('M');
   })
 });
 
