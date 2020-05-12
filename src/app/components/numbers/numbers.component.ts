@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RomanNumeralsService } from '../../services/roman-numerals.service';
 
 @Component({
   selector: 'app-numbers',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./numbers.component.css']
 })
 export class NumbersComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  
+  public resultado: String = ""
+  constructor(public rms :RomanNumeralsService) {    
+  }  
+  ngOnInit(): void {    
   }
-
+  romanos(n){
+    if(n === String || n == ""){
+      this.resultado = "Número invalido" 
+    }else{
+      this.resultado = "";
+      this.resultado=this.rms.aRomano(n);          
+    }    
+  }
 }

@@ -1,1 +1,9 @@
-<p>numbers works!</p>
+<div>
+    <h1>Números Romanos</h1>
+    <p>Ingrese un número entre 1 y 1000 para convertirlo en su representación romana </p>    
+    <input type="number" #txtNumero>
+    <button (click)="romanos(txtNumero.value)">Aceptar</button>
+     <p *ngIf="resultado">
+         El resultado es: {{resultado}} 
+    </p>    
+</div>
